@@ -21,9 +21,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom styles -->
     <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
     </style>
     <!-- tailwind custom color -->
     <script>
@@ -50,145 +50,471 @@
       <!--Start of Nav-->
       <nav class="my-4">
         <div class="navbar md:bg-fruit-red rounded-full">
-            <div class="navbar-start ">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box md:w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                  <li>
-                    <div><input type="text" placeholder="Search Here" class="py-2 px-7 bg-white rounded-full" />
-                        <img class="w-5 absolute" src="./images/search.webp" alt="">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="flex items-center gap-2">
-                <img src="./images/logo.png" alt="">
-                <h3 class="text-black md:text-white text-4xl font-bold whitespace-nowrap">Fruit Burst</h3>
-              </div>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-white text-lg">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box md:w-52"
+              >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
+                <li>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Search Here"
+                      class="py-2 px-7 bg-white rounded-full"
+                    />
+                    <img
+                      class="w-5 absolute"
+                      src="./images/search.webp"
+                      alt=""
+                    />
+                  </div>
+                </li>
               </ul>
             </div>
-            <div class="navbar-end hidden md:flex relative pr-4">
-                <input type="text" placeholder="Search Here" class="py-2 px-7 bg-white rounded-full" />
-                <img class="w-5 absolute" src="./images/search.webp" alt="">
-              </div>
+            <div class="flex items-center gap-2">
+              <img src="./images/logo.png" alt="" />
+              <h3
+                class="text-black md:text-white text-4xl font-bold whitespace-nowrap"
+              >
+                Fruit Burst
+              </h3>
+            </div>
           </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-white text-lg">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end hidden md:flex relative pr-4">
+            <input
+              type="text"
+              placeholder="Search Here"
+              class="py-2 px-7 bg-white rounded-full"
+            />
+            <img class="w-5 absolute" src="./images/search.webp" alt="" />
+          </div>
+        </div>
       </nav>
       <!--Start of Banner-->
       <section>
         <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full bg-[url('/images/banner1.png')] bg-cover">
-              <div class="w-full backdrop-brightness-50 ">
-                <div class="flex flex-col items-center space-y-6 mt-20 mb-40  ">
-                    <h3 class="text-4xl md:text-7xl text-white text-center">Exotic tastes at your
-                        <br>
-                        doorstep
-                    </h3>
-                    <p class="text-lg text-white">We supply highly quality organic products</p>
-                    <button class="btn bg-fruit-red border-0 rounded-lg text-white">Shop Now</button>
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle bg-black text-white font-extralight ">❮</a> 
-                <a href="#slide2" class="btn btn-circle bg-black text-white font-extralight ">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full bg-[url('/images/banner2.png')] bg-cover">
-                <div class="w-full backdrop-brightness-50">
-                    <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
-                        <h3 class="text-4xl md:text-7xl text-white text-center">Exotic tastes at your
-                            <br>
-                            doorstep
-                        </h3>
-                        <p class="text-lg text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-fruit-red border-0 rounded-lg text-white">Shop Now</button>
-                    </div>
-                  </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle bg-black text-white font-extralight ">❮</a> 
-                <a href="#slide3" class="btn btn-circle bg-black text-white font-extralight ">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full bg-[url('/images/banner3.png')] bg-cover">
-                <div class="w-full backdrop-brightness-50">
-                    <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
-                        <h3 class="text-4xl md:text-7xl text-white text-center">Exotic tastes at your
-                            <br>
-                            doorstep
-                        </h3>
-                        <p class="text-lg text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-fruit-red border-0 rounded-lg text-white">Shop Now</button>
-                    </div>
-                  </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle bg-black text-white font-extralight ">❮</a> 
-                <a href="#slide4" class="btn btn-circle bg-black text-white font-extralight ">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full bg-[url('/images/banner4.png')] bg-cover">
-                <div class="w-full backdrop-brightness-50">
-                    <div class="flex flex-col items-center space-y-6 mt-20 mb-40 ">
-                        <h3 class="text-4xl md:text-7xl text-white text-center">Exotic tastes at your
-                            <br>
-                            doorstep
-                        </h3>
-                        <p class="text-lg text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-fruit-red border-0 rounded-lg text-white">Shop Now</button>
-                    </div>
-                  </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle bg-black text-white font-extralight">❮</a> 
-                <a href="#slide1" class="btn btn-circle bg-black text-white font-extralight">❯</a>
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-[url('/images/banner1.png')] bg-cover"
+          >
+            <div class="w-full backdrop-brightness-50">
+              <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
+                <h3 class="text-4xl md:text-7xl text-white text-center">
+                  Exotic tastes at your
+                  <br />
+                  doorstep
+                </h3>
+                <p class="text-lg text-white">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-fruit-red border-0 rounded-lg text-white">
+                  Shop Now
+                </button>
               </div>
             </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❯</a
+              >
+            </div>
           </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[url('/images/banner2.png')] bg-cover"
+          >
+            <div class="w-full backdrop-brightness-50">
+              <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
+                <h3 class="text-4xl md:text-7xl text-white text-center">
+                  Exotic tastes at your
+                  <br />
+                  doorstep
+                </h3>
+                <p class="text-lg text-white">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-fruit-red border-0 rounded-lg text-white">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[url('/images/banner3.png')] bg-cover"
+          >
+            <div class="w-full backdrop-brightness-50">
+              <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
+                <h3 class="text-4xl md:text-7xl text-white text-center">
+                  Exotic tastes at your
+                  <br />
+                  doorstep
+                </h3>
+                <p class="text-lg text-white">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-fruit-red border-0 rounded-lg text-white">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[url('/images/banner4.png')] bg-cover"
+          >
+            <div class="w-full backdrop-brightness-50">
+              <div class="flex flex-col items-center space-y-6 mt-20 mb-40">
+                <h3 class="text-4xl md:text-7xl text-white text-center">
+                  Exotic tastes at your
+                  <br />
+                  doorstep
+                </h3>
+                <p class="text-lg text-white">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-fruit-red border-0 rounded-lg text-white">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white font-extralight"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </header>
     <!--Start of Main-->
     <main class="container mx-auto">
       <!--Start of Deal of the day-->
-      <section></section>
+      <section class="my-24">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
+          <div class="flex flex-col gap-4 w-1/2">
+            <h4 class="text-black text-3xl md:text-5xl font-extrabold">Deal of the day</h4>
+            <p class="text-[#12121299] text-sm md:text-base font-semibold">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value: 24"></span>
+              </span>
+              min
+            </div>
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value: 49"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+        <!--deal card container-->
+        <div class="grid md:grid-cols-4 gap-4">
+          <!--card 1-->
+          <div class="card p-8 border border-solid border-[#1212121A]">
+            <figure><img src="./images/fruit6.png" alt="fruit6" /></figure>
+            <div class="card-body text-center border-solid">
+              <h2 class="text-2xl text-black font-bold">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-[#12121299] text-base font-semibold">Apples</p>
+              <div class="flex justify-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <a class="text-fruit-red">Details</a>
+            </div>
+          </div>
+          <!--card 2-->
+          <div class="card border border-solid border-[#1212121A] p-8">
+            <figure><img src="./images/fruit7.png" alt="fruit6" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl text-black font-bold">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-[#12121299] text-base font-semibold">Oranges</p>
+              <div class="flex justify-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <a class="text-fruit-red">Details</a>
+            </div>
+          </div>
+          <!--card 3-->
+          <div class="card border border-solid border-[#1212121A] p-8">
+            <figure><img src="./images/fruit8.png" alt="fruit6" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl text-black font-bold">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-[#12121299] text-base font-semibold">Red Dragon</p>
+              <div class="flex justify-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <a class="text-fruit-red">Details</a>
+            </div>
+          </div>
+          <!--card 4-->
+          <div class="card border border-solid border-[#1212121A] p-8">
+            <figure><img src="./images/fruit9.png" alt="fruit6" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl text-black font-bold">12.90$ - 18.85$</h2>
+              <hr>
+              <p class="text-[#12121299] text-base font-semibold">Banana</p>
+              <div class="flex justify-center">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <a class="text-fruit-red">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 mb-27 flex justify-center">
+            <button class="bg-fruit-red text-white text-center text-xl font-extrabold p-4 rounded-lg">Shop All</button>
+        </div>
+      </section>
       <!--Start of Meet the Team-->
       <section></section>
       <!--Start of Why choose us-->
       <section></section>
     </main>
     <!--Start of Footer-->
-    <footer class="bg-black py-20 flex flex-col justify-center items-center gap-14">
-        <div class="flex items-center gap-2">
-            <img src="./images/logo.png" alt="">
-            <h3 class="text-white text-4xl font-bold whitespace-nowrap">Fruit Burst</h3>
-        </div>
-        <div>
-            <ul class="text-white text-lg grid grid-cols-3 md:flex gap-6 md:gap-14 whitespace-nowrap">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-                <li><a>Support</a></li>
-                <li><a>My Account</a></li>
-            </ul>
-        </div>
-        <div class="flex gap-6 md:gap-14">
-            <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="">
-            <img class="w-10" src="./images/YouTube_full-color_icon_(2017).svg.webp" alt="">
-            <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="">
-            <img class="w-10" src="./images/YouTube_full-color_icon_(2017).svg.webp" alt="">
-            <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="">
-            <img class="w-10" src="./images/YouTube_full-color_icon_(2017).svg.webp" alt="">
-        </div>
+    <footer
+      class="bg-black py-20 flex flex-col justify-center items-center gap-14"
+    >
+      <div class="flex items-center gap-2">
+        <img src="./images/logo.png" alt="" />
+        <h3 class="text-white text-4xl font-bold whitespace-nowrap">
+          Fruit Burst
+        </h3>
+      </div>
+      <div>
+        <ul
+          class="text-white text-lg grid grid-cols-3 md:flex gap-6 md:gap-14 whitespace-nowrap"
+        >
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+          <li><a>Support</a></li>
+          <li><a>My Account</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-6 md:gap-14">
+        <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="" />
+        <img
+          class="w-10"
+          src="./images/YouTube_full-color_icon_(2017).svg.webp"
+          alt=""
+        />
+        <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="" />
+        <img
+          class="w-10"
+          src="./images/YouTube_full-color_icon_(2017).svg.webp"
+          alt=""
+        />
+        <img class="w-10" src="./images/Tiktok-Logo-2016.png" alt="" />
+        <img
+          class="w-10"
+          src="./images/YouTube_full-color_icon_(2017).svg.webp"
+          alt=""
+        />
+      </div>
     </footer>
   </body>
 </html>
