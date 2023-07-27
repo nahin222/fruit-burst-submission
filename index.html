@@ -48,7 +48,7 @@
     <!--Start of Header-->
     <header class="container mx-auto">
       <!--Start of Nav-->
-      <nav>
+      <nav class="my-4">
         <div class="navbar bg-fruit-red rounded-full">
             <div class="navbar-start">
               <div class="dropdown">
@@ -60,6 +60,11 @@
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
                   <li><a>All Fruits</a></li>
+                  <li>
+                    <div><input type="text" placeholder="Search Here" class="py-2 px-7 bg-white rounded-full" />
+                        <img class="w-5 absolute" src="./images/search.webp" alt="">
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="flex items-center gap-2">
@@ -75,8 +80,9 @@
                 <li><a>All Fruits</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
+            <div class="navbar-end hidden md:flex relative">
+                <input type="text" placeholder="Search Here" class="py-2 px-7 bg-white rounded-full" />
+                <img class="w-5 absolute" src="./images/search.webp" alt="">
               </div>
           </div>
       </nav>
